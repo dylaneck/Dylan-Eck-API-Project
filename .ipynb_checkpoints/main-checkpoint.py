@@ -2,6 +2,7 @@
 #Dylan Eck
 #CPSC 222, Fall 2021
 #Data Assignment #4
+#I did not attempt the bonus
 #This program takes in a city name from the user, uses an api to convert this to coordinates, then uses another api to find the closest weather station, and uses a final api to find the weather from that station for the year
 #This then writes the data out to a csv file, cleans it, and then writes it out to another csv file
 #I used the code formatting on RapidAPI for reading in the APIs
@@ -17,8 +18,7 @@ city = city.replace(" ", "+")
 #replaces whitespace with a '+'
 
 lat_lon_url = "http://open.mapquestapi.com/geocoding/v1/address"
-key = "key"
-#Need personal key to run the program
+key = "xMTqCrcqVZ4mHAc5ae3IooBGkf7AbmME"
 
 lat_lon_url += "?key=" + key 
 lat_lon_url += "&location=" + city
