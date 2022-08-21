@@ -45,9 +45,10 @@ querystring2 = {"lat": lat,"lon": lng,"limit": 1}
 #query string
 headers = {
     'x-rapidapi-host': "meteostat.p.rapidapi.com",
-    'x-rapidapi-key': "3dbfefd9f6msh1d28bf016590528p1853cfjsn25b11998838a"
+
+    'x-rapidapi-key': "key"
     }
-#header
+#need own key
 response3 = requests.request("GET", url3, headers=headers, params=querystring2)
 #Sends request to API
 
